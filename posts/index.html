@@ -34,7 +34,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://shenhaoyi.github.io/posts/" />
-<meta property="og:updated_time" content="2020-05-06T20:06:24+08:00" />
+<meta property="og:updated_time" content="2020-05-06T21:02:37+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Posts"/>
@@ -91,6 +91,33 @@
   <article class="pa3 pa4-ns nested-copy-line-height nested-img">
     <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
     <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="http://shenhaoyi.github.io/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="link black dim">
+        如何用hugo搭建个人博客
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      hugo安装及其环境变量配置  打开它下载链接，找到hugo_xxxx_Windows-64bit.zip，进行下载 然后解压缩，把hugo.exe文件放入你习惯放的位置（D:\software\hugo\） 把你放置hugo.exe的路径（如(D:\software\hugo)）添加到path中  命令行操作(代码中出现的xxx需自己修改) 进入存放本地博客的目录
+cd xxx 创建一个site
+hugo new site xxx.github.io-creator 使用vscode打开创建的目录
+code xxx.github.io-creator 创建本地git仓库
+git init 下载主题
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 主题配置
+echo &#39;theme = &#34;ananke&#34;&#39; &gt;&gt; config.toml 创建第一篇博客，自己进行文档编写和修改
+hugo new posts/xxx.md 启动hugo本地服务器，此时可以本地访问博客，可以ctrl+c终止，或者新建一个console
+hugo server -D public目录生成
+hugo -D 此时，在xxx.github.io-creator目录下新建一个.gitignore文件，写入/public/,使其与xxx.github.io-creator不同是上传到同一个仓库中，让public自成一个仓库。为了上传本地仓库，需要在github中分别创建好着两个对应的仓库
+进入public目录，进行本地git提交和github上传
+cd public git init git add . git commit -v git remote add origin git@github.com:xxx git push -u origin master 返回xxx.github.io-creator目录，也进行上传备份
+cd .. git add .
+    </div>
+  </div>
+</div>
+</div>
       
         <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
   <div class="bg-white mb3 pa4 gray overflow-hidden">
